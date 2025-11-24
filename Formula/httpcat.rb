@@ -1,8 +1,8 @@
 class Httpcat < Formula
   desc "CLI tool for interacting with httpcat agent - create, buy, and sell tokens with x402 payments"
   homepage "https://github.com/hathbanger/httpcat-cli"
-  url "https://registry.npmjs.org/httpcat-cli/-/httpcat-cli-0.0.1.tgz"
-  sha256 "3ef964582f34257728e3960a3dff06a664813d63db5cc121f63279fa4127af23"
+  url "https://registry.npmjs.org/httpcat-cli/-/httpcat-cli-0.0.2.tgz"
+  sha256 "16780de5cfd87d9f06a661254877dcb3c5490d21fccd6bff3df58b2c74db33db"
   license "MIT"
 
   depends_on "node"
@@ -13,6 +13,6 @@ class Httpcat < Formula
   end
 
   test do
-    assert_match "0.0.1", shell_output("#{bin}/httpcat --version")
+    assert_match "0.0.2", shell_output("#{bin}/httpcat --version")
   end
 end
